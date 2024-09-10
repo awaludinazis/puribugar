@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 14:52:10.586267",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specialization_id",
+  "specialization_name",
+  "specialization_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "specialization_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specialization Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specialization_description",
+   "fieldtype": "Data",
+   "label": "Specialization Description"
+  },
+  {
+   "fieldname": "specialization_id",
+   "fieldtype": "Link",
+   "label": "Specialization Id",
+   "options": "Trainer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-05 15:20:51.038266",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Trainer Specializations",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

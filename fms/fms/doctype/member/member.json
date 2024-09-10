@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-09-05 13:29:08.341628",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fullname",
+  "no_ktp",
+  "address",
+  "join_date",
+  "email",
+  "existing_member_id",
+  "biometric_id",
+  "attendance_status",
+  "last_check_in",
+  "last_check_out",
+  "birthplace",
+  "birthdate",
+  "blood_type",
+  "gender",
+  "emergency_contact_name",
+  "emergency_contact_number",
+  "has_signed_consent_form",
+  "file_consent_form",
+  "membership_status",
+  "expired_date",
+  "marital_status",
+  "religion",
+  "no_kartu_keluarga",
+  "file_ktp",
+  "file_kartu_keluarga",
+  "family_member_count",
+  "salutation",
+  "family_member"
+ ],
+ "fields": [
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fullname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_ktp",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No KTP",
+   "length": 16,
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Series",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Join Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "existing_member_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Existing Member Id"
+  },
+  {
+   "fieldname": "biometric_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Biometric Id"
+  },
+  {
+   "fieldname": "attendance_status",
+   "fieldtype": "Link",
+   "label": "Attendance Status",
+   "options": "Attendance Status"
+  },
+  {
+   "fieldname": "last_check_in",
+   "fieldtype": "Datetime",
+   "label": "Last Check In"
+  },
+  {
+   "fieldname": "last_check_out",
+   "fieldtype": "Datetime",
+   "label": "Last Check Out"
+  },
+  {
+   "fieldname": "birthplace",
+   "fieldtype": "Data",
+   "label": "Birthplace"
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Birthdate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Link",
+   "label": "Blood Type",
+   "options": "Blood Type"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_signed_consent_form",
+   "fieldtype": "Check",
+   "label": "Has Signed Consent Form"
+  },
+  {
+   "fieldname": "file_consent_form",
+   "fieldtype": "Attach",
+   "label": "File Consent Form"
+  },
+  {
+   "fieldname": "membership_status",
+   "fieldtype": "Link",
+   "label": "Membership Status",
+   "options": "Membership Status"
+  },
+  {
+   "fieldname": "expired_date",
+   "fieldtype": "Date",
+   "label": "Expired Date"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital Status"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion"
+  },
+  {
+   "fieldname": "no_kartu_keluarga",
+   "fieldtype": "Data",
+   "label": "No Kartu Keluarga"
+  },
+  {
+   "fieldname": "file_ktp",
+   "fieldtype": "Attach",
+   "label": "File KTP"
+  },
+  {
+   "fieldname": "file_kartu_keluarga",
+   "fieldtype": "Attach",
+   "label": "File Kartu Keluarga"
+  },
+  {
+   "fieldname": "family_member_count",
+   "fieldtype": "Int",
+   "label": "Family Member Count"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "family_member",
+   "fieldtype": "Table",
+   "label": "Family Member",
+   "options": "Family Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 14:02:34.381253",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Member",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

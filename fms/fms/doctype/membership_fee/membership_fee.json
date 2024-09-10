@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-06 13:31:08.935996",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "member_id",
+  "subscription_id",
+  "base_fee",
+  "adjusted_fee",
+  "adjusted_reason",
+  "effective_date",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member Id",
+   "options": "Member"
+  },
+  {
+   "fieldname": "subscription_id",
+   "fieldtype": "Link",
+   "label": "Subscription Id",
+   "options": "Membership Subscription"
+  },
+  {
+   "fieldname": "base_fee",
+   "fieldtype": "Float",
+   "label": "Base Fee",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "adjusted_fee",
+   "fieldtype": "Float",
+   "label": "Adjusted Fee",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "adjusted_reason",
+   "fieldtype": "Data",
+   "label": "Adjusted Reason"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 13:35:12.559251",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Membership Fee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

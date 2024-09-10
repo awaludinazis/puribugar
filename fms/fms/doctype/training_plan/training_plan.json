@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-06 11:14:33.948427",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "training_participants",
+  "trainer",
+  "training_plan_name",
+  "training_plan_description",
+  "start_date",
+  "end_date",
+  "link_eeym"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "training_participants",
+   "fieldtype": "Link",
+   "label": "Training Participants",
+   "options": "Training Participants"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Trainer"
+  },
+  {
+   "fieldname": "training_plan_name",
+   "fieldtype": "Data",
+   "label": "Training Plan Name"
+  },
+  {
+   "fieldname": "training_plan_description",
+   "fieldtype": "Data",
+   "label": "Training Plan Description"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "link_eeym",
+   "fieldtype": "Link",
+   "options": "Facilities"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 11:18:33.013905",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Training Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

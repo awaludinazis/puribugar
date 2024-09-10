@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-05 14:58:18.071369",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "trainer_name",
+  "table_fkow",
+  "biography",
+  "phone_number",
+  "email",
+  "trainer_availability",
+  "year_of_experiences",
+  "table_fmwg"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trainer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "table_fkow",
+   "fieldtype": "Table",
+   "options": "Trainer Specializations"
+  },
+  {
+   "fieldname": "biography",
+   "fieldtype": "Data",
+   "label": "Biography"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "trainer_availability",
+   "fieldtype": "Table",
+   "label": "Trainer Availability",
+   "options": "Trainer Availability"
+  },
+  {
+   "fieldname": "year_of_experiences",
+   "fieldtype": "Int",
+   "label": "Year Of Experiences"
+  },
+  {
+   "fieldname": "table_fmwg",
+   "fieldtype": "Table",
+   "options": "Trainer Certifications"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 15:24:33.009900",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Trainer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

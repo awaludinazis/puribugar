@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-06 11:10:57.920471",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "participant_name",
+  "participant_phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "participant_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Participant Name",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "participant_phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Participant Phone Number",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 11:12:13.177964",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Training Participants",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

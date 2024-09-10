@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-05 14:05:39.847322",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fullname",
+  "phone_number",
+  "no_ktp",
+  "address",
+  "employment_join_date",
+  "personal_email",
+  "existing_member_id",
+  "biometric_id",
+  "attendance_status",
+  "last_check_in",
+  "last_check_out",
+  "birthplace",
+  "birthdate",
+  "blood_type",
+  "gender",
+  "marital_status",
+  "religion",
+  "salutation",
+  "employee_department",
+  "employment_type",
+  "designation",
+  "employee_reports_to",
+  "branch",
+  "emergency_contact_name",
+  "emergency_contact_number",
+  "company_email",
+  "employment_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fullname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_ktp",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No KTP",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_join_date",
+   "fieldtype": "Date",
+   "label": "Employment Join Date"
+  },
+  {
+   "fieldname": "personal_email",
+   "fieldtype": "Data",
+   "label": "Personal Email"
+  },
+  {
+   "fieldname": "existing_member_id",
+   "fieldtype": "Data",
+   "label": "Existing Member Id"
+  },
+  {
+   "fieldname": "biometric_id",
+   "fieldtype": "Data",
+   "label": "Biometric Id"
+  },
+  {
+   "fieldname": "attendance_status",
+   "fieldtype": "Link",
+   "label": "Attendance Status",
+   "options": "Attendance Status"
+  },
+  {
+   "fieldname": "last_check_in",
+   "fieldtype": "Datetime",
+   "label": "Last Check In"
+  },
+  {
+   "fieldname": "last_check_out",
+   "fieldtype": "Datetime",
+   "label": "Last Check Out"
+  },
+  {
+   "fieldname": "birthplace",
+   "fieldtype": "Data",
+   "label": "Birthplace"
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Birthdate"
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Link",
+   "label": "Blood Type",
+   "options": "Blood Type"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital Status"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Link",
+   "label": "Religion",
+   "options": "Religion"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "employee_department",
+   "fieldtype": "Link",
+   "label": "Employee Department",
+   "options": "Employee Department"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employement Type"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "employee_reports_to",
+   "fieldtype": "Data",
+   "label": "Employee Reports To"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "employment_end_date",
+   "fieldtype": "Date",
+   "label": "Employment End Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-05 14:22:59.542983",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Employee Fitness",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

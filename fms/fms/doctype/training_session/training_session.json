@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-06 11:23:16.790895",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "training_plan",
+  "session_date",
+  "start_time",
+  "end_time",
+  "training_room",
+  "training_session_result",
+  "training_notes",
+  "trainer_feedback",
+  "participant_feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series"
+  },
+  {
+   "fieldname": "training_plan",
+   "fieldtype": "Link",
+   "label": "Training Plan",
+   "options": "Training Plan"
+  },
+  {
+   "fieldname": "session_date",
+   "fieldtype": "Date",
+   "label": "Session Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "training_room",
+   "fieldtype": "Link",
+   "label": "Training Room",
+   "options": "Training Room"
+  },
+  {
+   "fieldname": "training_session_result",
+   "fieldtype": "Table",
+   "label": "Training Session Result",
+   "options": "Training Session Result"
+  },
+  {
+   "fieldname": "training_notes",
+   "fieldtype": "Data",
+   "label": "Training Notes"
+  },
+  {
+   "fieldname": "trainer_feedback",
+   "fieldtype": "Data",
+   "label": "Trainer Feedback"
+  },
+  {
+   "fieldname": "participant_feedback",
+   "fieldtype": "Table",
+   "label": "Participant Feedback",
+   "options": "Training Session Feedback"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 11:45:05.521441",
+ "modified_by": "Administrator",
+ "module": "fms",
+ "name": "Training Session",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
