@@ -58,7 +58,7 @@ def verify():
     try:
         gate_name = "rs1"
         data = frappe.local.form_dict
-        biometric_id = data.get("info", {}).get("PersonID")
+        biometric_id = data.get("info", {}).get("Address")
 
         if not biometric_id:
             return {
@@ -101,8 +101,8 @@ def verify():
 
         frappe.db.commit()
 
-        # sleep 2 detik
-        time.sleep(2)
+        # sleep 1 detik
+        time.sleep(1)
         status_in = "close"
         gate_tripod = frappe.get_doc("Gate Tripod", {"gate_name": gate_name})
         gate_tripod.db_set('status_in', status_in)
