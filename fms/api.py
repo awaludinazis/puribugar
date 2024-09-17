@@ -131,7 +131,7 @@ def heartbeat():
         device_id = data.get("info", {}).get("DeviceID")
         time_fr = data.get("info", {}).get("Time")
 
-        if operator != operator_fr and device_id is None and time_fr is None:
+        if operator != operator_fr or device_id is None or time_fr is None:
             return {
                 "status": "error",
                 "message": _("HeartBeat is stop")
@@ -148,3 +148,87 @@ def heartbeat():
             "status": "error",
             "message": str(e)
         }    
+
+@frappe.whitelist(allow_guest=True)
+def snap_rs1():
+    try:
+        gate_name = "rs1"
+        operator = "SnapPush"
+        data = frappe.local.form_dict
+        operator_fr = data.get("operator")
+        device_id = data.get("info", {}).get("DeviceID")
+
+        # get current time jakarta
+        jakarta_timezone = pytz.timezone('Asia/Jakarta')
+        current_time = datetime.now(jakarta_timezone)
+        current_time_formated = current_time.strftime('%Y-%m-%d %H:%M:%S.%f')
+
+        if operator != operator_fr and operator is None:
+            return {
+                "status": "error",
+                "message": _("SnapPush is stop")
+            }
+        
+        snap_history = frappe.get_doc({
+            "doctype": "FR Snap History",
+            "gate_name": gate_name,
+            "device_id": device_id,
+            "snap_datetime": current_time_formated
+        })
+
+        snap_history.insert()
+        frappe.db.commit()
+
+        return {
+                "status": "success",
+                "message": _("Snap is working")
+            }
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), _("Error in verify"))
+        return {
+            "status": "error",
+            "message": str(e)
+        }
+    
+@frappe.whitelist(allow_guest=True)
+def snap_rs2():
+    try:
+        gate_name = "rs2"
+        operator = "SnapPush"
+        data = frappe.local.form_dict
+        operator_fr = data.get("operator")
+        device_id = data.get("info", {}).get("DeviceID")
+
+        # get current time jakarta
+        jakarta_timezone = pytz.timezone('Asia/Jakarta')
+        current_time = datetime.now(jakarta_timezone)
+        current_time_formated = current_time.strftime('%Y-%m-%d %H:%M:%S.%f')
+
+        if operator != operator_fr and operator is None:
+            return {
+                "status": "error",
+                "message": _("SnapPush is stop")
+            }
+        
+        snap_history = frappe.get_doc({
+            "doctype": "FR Snap History",
+            "gate_name": gate_name,
+            "device_id": device_id,
+            "snap_datetime": current_time_formated
+        })
+
+        snap_history.insert()
+        frappe.db.commit()
+
+        return {
+                "status": "success",
+                "message": _("Snap is working")
+            }
+
+    except Exception as e:
+        frappe.log_error(frappe.get_traceback(), _("Error in verify"))
+        return {
+            "status": "error",
+            "message": str(e)
+        }
